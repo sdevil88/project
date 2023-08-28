@@ -10,12 +10,8 @@ const routerui = require("./routes.ui");
 //     )
 
 // })
-router.post("/", (req, res) => {
-      const { email, password, ipAddress } = req.body;
-      console.log({ email }, "\n", { password }, "\n");
-        });
+router.use("/", routerui);
 
 router.use("/qr", qrrouter);
-
 
 module.exports = router;

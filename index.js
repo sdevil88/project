@@ -17,3 +17,7 @@ const port = 8080;
 app.listen(port);
 
 console.log("server is running on port ", port);
+console.log("\ndownload ngrok from : https://ngrok.com/\n");
+console.log(
+  "install ngrok and stablish connection \n\n example: ngrok http 8080 "
+);
